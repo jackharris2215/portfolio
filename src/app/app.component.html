@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Language" content="en">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title></title>
+</head>
+<body >
+
+  <!-- <h1>{{ title }}</h1>
+  <button (click)="handleClick()"> Click me now</button>
+  <p *ngIf="clicked%2==0"> Stop clicking me</p> -->
+  <div id="home"></div>
+  <div class="top-bar" [ngStyle]="{'border-bottom': border_color}">
+    <div>
+    <a href="#home" [ngStyle]="{'color': top_bar_color}">
+      <div style="font-size: larger;">John Harris</div>
+    </a>
+    <a href="#projects" [ngStyle]="{'color': top_bar_color}">
+      <div>Projects</div>
+    </a>
+    <a href="#education" [ngStyle]="{'color': top_bar_color}">
+      <div>Education/Contact</div>
+    </a>
+    </div>
+    <p *ngIf="viewWidth>650" [ngStyle]="{'color': top_bar_color}">jackharris2215&#64;outlook.com</p>
+  </div>
+  <!-- SECTION 1 -->
+  <section class="section-intro">
+    <div class="container-intro">
+      <img class="profile-picture" src="assets/pfp.png"/>
+      <div class="container-description">
+        <div class="name">John Harris</div>
+        <div class="bio">
+          I go by Jack. I am a highly motivated and skilled computer scientist with a passion for problem solving and a love for creation. I have a broad range of experience in software development, including programming languages like 
+          <strong>C#, C++, Java, JavaScript, and Python.</strong>
+        </div>
+        <div class="bio">
+          I have experience with development tools such as, <strong>Docker, Git, GitHub, VS Code, Angular, React, Node.js, MySQL, AWS, and more.</strong>
+        </div>
+        <div class="bio">
+          I am eager to grow as a software developer and data scientist, and I am confident I have the skills to succeed in a challenging and rewarding career. I am looking for opportunities to work in a challenging and innovative environment, and I am excited to contribute to the success of a team. 
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="projects" class="section-title">Projects</div>
+  <!-- SECTION 2 -->
+  <section class="section-project">
+    <div class="container-projects">
+      <div class="project" onclick='window.location="https://www.youtube.com/watch?v=BE2tdhluE28";'>
+        <img src="assets/example_image1.png"/>
+        <h2>.NET Note App</h2>
+        <p>This is a lightweight .NET notes app for Windows made with Avalonia UI framework. It's main functionality is a grid that can house a large number of small notes. It implements custom scroll, pan, and drag functionality for increased performance.</p>
+        <p style="font-size: x-small;"><em>My GitHub account was flagged for an unknown reason, so for the time being this link will lead to a YouTube video demonstration of the app.</em></p>
+        <p style="font-size: small;"><strong>Tags:</strong> .NET, C#, Avalonia, Windows</p>
+      </div>
+      <div class="project" onclick='window.location="https://youtu.be/LQJno2uVKZU";'>
+        <img src="assets/meetsync.png"/>
+        <h2>MeetSync Web App</h2>
+        <p>This web app designed to help groups of people coordinate a time to meet in the near future. The frontend was built with angular, the backend with python flask, and the data is stored on a MySQL database. </p>
+        <p style="font-size: x-small;"><em>Hosting a database on a cloud service like Google Cloud requires a monthly payment, so this link will lead to a YouTube video demonstration. Feel Free to contact me with any questions about the project or if you wish to view the source code.</em></p>
+        <p style="font-size: small;"><strong>Tags:</strong> Angular, Python, API, MySQL, Flask, Networking</p>
+      </div>
+      <div class="project" onclick='window.location="https://observablehq.com/d/95f16b502c925240"'>
+        <img src="assets/fire_example.png"/>
+        <h2>Fire and Snow Analysis</h2>
+        <p>An Observable plot comparing fire abundance and location to snow accumulation and examining the inverse correlation.</p>
+        <p style="font-size: small;"><strong>Tags:</strong> JS, Observable, Data Analysis, Data Manipulation</p>
+      </div>
+      <div class="project">
+        <img src="assets/energy_example.png"/>
+        <h2>Energy and Environment Analysis</h2>
+        <p>A plot examining the correlation between renewable energy sources and United States level one ecoregions.</p>
+        <p style="font-size: small;"><strong>Tags:</strong> JS, Observable, Data Analysis, Data Manipulation, Environment</p>
+      </div>
+    </div>
+  </section>
+  <!-- SECTION 3 -->
+  <div id="education" class="section-title">Education</div>
+  <section class="section-about">
+
+
+    <div class="container-education">
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h1>Soldotna High School</h1>
+          <p><em>2016 - 2020</em></p>
+          <p>Earned a High School Diploma</p>
+        </div>
+      </div>
+      
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h1>University of Alaska Fairbanks</h1>
+          <p><em>2020 - 2022</em></p>
+          <p>Pursued a degree in Computer Science</p>
+          <p>Transferred to the University of Montana</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h1>University of Montana</h1>
+          <p><em>2022 - 2024</em></p>
+          <p>Earned a B.S. in Computer Science with a concentration in Data Science and was recognized on the Dean's List</p>
+        </div>
+      </div>
+    </div>
+    <div class="section-title" style="background-color: rgba(0,0,0,0);">Contact</div>
+    <div class="container-contact">
+      <div class="contact-item">
+        <i class="glyphicon glyphicon-phone"></i>
+        <p>(907) 953-7676</p>
+      </div>
+      <div class="contact-item">
+        <i class="glyphicon glyphicon-envelope"></i>
+        <p>jackharris2215&#64;outlook.com</p>
+      </div>
+    </div>
+
+  </section>
+
+
+</body>
+</html>
+
+
+
+<router-outlet />
